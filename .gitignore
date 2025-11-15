@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+.out/
+.next/
+.vercel/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Cache
+.cache/
+.eslintcache
+
+# Temporary files
+*.tmp
+*.log
+
+# Coverage reports
+coverage/
+
+# Mongo / Database Dumps
+dump/
+
+# Uploads (optional)
+uploads/
