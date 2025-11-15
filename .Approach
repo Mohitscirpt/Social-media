@@ -1,0 +1,5 @@
+This project extracts text from documents and analyzes social media content to provide meaningful engagement suggestions. I first implemented a document upload module with drag-and-drop support for both PDF and image files. PDF files are parsed using standard PDF extraction libraries, while image files go through OCR using Tesseract to extract text accurately.
+
+After extracting the text, the system processes the content through multiple analysis layers such as word frequency, sentiment analysis, and keyword detection. Based on these insights, the app generates improvement suggestions like better hashtags, emotional tone enhancement, and readability improvements.
+
+The frontend focuses on a clean, responsive UI with loading states and error handling to ensure a smooth user experience. The backend handles file processing, OCR, text analysis, and API responses. Clean folder structure and modular code were maintained for readability and scalability.

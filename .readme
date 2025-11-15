@@ -1,0 +1,103 @@
+📌 Social Media Content Analyzer
+
+A web application that analyzes social media content, extracts text from uploaded documents (PDFs & images), performs OCR, and suggests engagement improvements.
+
+🚀 Features
+1. Document Upload
+
+Upload PDF files and image files (JPG, PNG)
+
+Drag-and-drop + file picker support
+
+Multiple file validation + clean UI
+
+2. Text Extraction
+
+PDF Parsing
+
+Extracts text while maintaining basic formatting
+
+OCR (Optical Character Recognition)
+
+Converts text from scanned images using Tesseract OCR
+
+3. Content Analysis
+
+Word frequency analysis
+
+Sentiment analysis (optional)
+
+Suggestions to improve:
+
+Engagement
+
+Readability
+
+Hashtag usage
+
+Tone
+
+4. User-Friendly UI
+
+Loading states
+
+Error handling
+
+Clean UX
+
+
+Tech Stack
+Frontend
+
+React + TypeScript
+
+HTML5, CSS3
+
+Axios (API calls)
+
+Backend
+
+Node.js
+
+Express.js
+
+Tesseract.js (OCR)
+
+pdf-parse / pdf.js (PDF extraction)
+
+Database
+
+Supabase (Auth + Storage + Database)
+
+SOCIAL_MEDIA/
+│
+├── backend/
+│   ├── models/
+│   ├── node_modules/
+│   ├── routes/
+│   ├── uploads/           # Uploaded files stored temporarily
+│   ├── eng.traineddata    # OCR language data (Tesseract)
+│   ├── server.js          # Express backend entry point
+│   ├── package.json
+│   └── package-lock.json
+│
+├── frontend/
+│   ├── dist/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   └── README.md
+│
+├── .env
+├── .gitignore
+└── README.md   ← (Main GitHub README)
+
+| Method | Endpoint            | Description                |
+| ------ | ------------------- | -------------------------- |
+| POST   | `/upload/pdf`       | Upload a PDF, extract text |
+| POST   | `/upload/image`     | Upload image for OCR       |
+| GET    | `/analyze?text=...` | Analyze extracted text     |
